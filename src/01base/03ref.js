@@ -10,7 +10,7 @@ export default class App extends Component{
   
   return (
     <div>
-      {/* 字符串格式 在严格模式 React.StrictMode 存在潜在风险 重复*/}
+      {/* 字符串格式 在严格模式 React.StrictMode 存在潜在风险 命名重复*/}
        {/* <input ref='test'/>
 
        <button onClick={this.show}>value </button> */}
