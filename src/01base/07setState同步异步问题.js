@@ -1,25 +1,25 @@
 
 import React from "react";
 export default class App extends React.Component{
-
+// 18版本中的setSate 是异步的，
+// 18 之前 setState  在同步中是异步的，在异步中是同步的
    state={
     num:1
    }
 
    add = ()=>{
-    const {num} =this.state
     this.setState({
-        num: num +1
+        num: this.state.num +1
     })
 
     console.log(this.state.num)
     this.setState({
-        num: num +1
+        num: this.state.num +1
     })
 
     console.log(this.state.num)
     this.setState({
-        num: num +1
+        num: this.state.num +1
     })
 
     console.log(this.state.num)
@@ -31,23 +31,22 @@ export default class App extends React.Component{
    add2 = ()=>{
 
     setTimeout(()=>{
-        const {num} =this.state
         this.setState({
-            num: num +1
+            num: this.state.num +1
         })
     
         console.log(this.state.num)
         this.setState({
-            num: num +1
+            num: this.state.num +1
         })
     
         console.log(this.state.num)
         this.setState({
-            num: num +1
+            num: this.state.num +1
         })
     
         console.log(this.state.num)
-    },0)
+    },12)
    
    }
 
