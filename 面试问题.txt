@@ -61,3 +61,13 @@
 
 
   ####
+17.hooks  :
+   A.useState:这个有异步同步区分吗？ 存在合并吗？
+   B.useEffect :
+        可以模拟 componentDidMount componentDidUpdate  componentWillMount
+        一个文件可以写多个useEffect，
+        在页面渲染完成后执行，可能会导致页面抖动
+   C.useLayoutEffect：可以模拟 componentDidMount componentDidUpdate
+       在完成Dom更新完成后立即同步执行代码，可能会阻碍渲染进程
+   D.useCallback:缓存一个函数
+   E.useCallMemo:缓存一个函数并执行，将结果返回,可以完全替代useCallback
