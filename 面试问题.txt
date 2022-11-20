@@ -18,3 +18,5 @@
    2.1 兄弟组件：状态提升 Lifting State Up（多个组件有共同的父组件，父组件作为中间人）
    2.2 发布订阅模式： pubsub
    2.3 context :生产者和消费者模式 
+
+14.插槽  ---props.children 的使用
