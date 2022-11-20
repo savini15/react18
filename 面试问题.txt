@@ -20,3 +20,44 @@
    2.3 context :生产者和消费者模式 
 
 14.插槽  ---props.children 的使用
+
+16.生命周期函数：初始化  更新  销毁
+    
+  A. componentWillMount：*****UNSAFE  
+  　　render 之前最后修改状态的机会 为什么变成了UNSAFE？？　fiber 的提出高优先级的问题，可能导致这个生命周期（优先级低）被多次打断，多次执行
+  Ｂ．render 
+  　　不能修改 props state  
+  C. componentDidMount： axios setinteerval subcribe dom
+
+  更新：
+  A.componentWillReceiveProps: ****UNSAFE
+       参数 nextProps，
+       父组件状态的改变,运用在子组件里 ，挂载时候不触发，
+       可以根据新的props进行逻辑处理，比如转化为自己内部状态..
+  B.shouldComponentUpdate:   
+       参数 nextProps nextState ,return true /false
+  C.componentWillUpdate:  *****UNSAFE 
+  D.render
+  E.componentDidUpdate: dom操作  参数 prevProps prevState ,多次调用，要加判断，避免不必要的操作
+
+  销毁：
+  componentWillUnmount 
+
+
+  
+  #####新的生命周期
+  A.getDerivedStateFromProps: 
+       static  参数(nextProps,nextState)
+       返回一个对象  会与组件state 合并
+       在初始化和更新中都会调用
+       不能使用this ,不能有异步逻辑
+       配合componentDidUpdate 使用
+
+ B.  getSnapshotBeforeUpdate 
+     参数(prevProps,prevState)
+     更新中调用
+     返回一个对象
+     配合componentDidUpdate 使用,返回值作为第三个参数
+
+
+  ####
