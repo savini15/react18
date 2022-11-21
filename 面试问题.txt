@@ -71,3 +71,19 @@
        在完成Dom更新完成后立即同步执行代码，可能会阻碍渲染进程
    D.useCallback:缓存一个函数
    E.useCallMemo:缓存一个函数并执行，将结果返回,可以完全替代useCallback
+   F.useRef：
+          1.可以访问元素或者组件的属性或方法  
+          2.保存一个临时变量，可以记住变量值，模拟uesState.利用闭包
+   G.useContext : 对于之前子组件在使用父组件的Provider的简化
+                  要使用有同个父组件的多个context时候，
+                  也不用再用各种Provider对子组件也不用嵌套，
+                  返回jsx时不用写成函数形式
+
+                  父组件：生成Globalcontext React.createContext
+                  子组件：引入Globalcontext ,let context =useContext(context)，this.context
+   H.useReducer: 
+         把reducer处理函数和state 对象, 
+         公共的globalContext 放在外部
+       let  [state,dispatch] = useReducer(reducer,stateObj)
+      模拟一个简单版的redux  diapatch 不能处理异步
+       父子级，跨级组件组件的使用:与createContext useContext配合使用
