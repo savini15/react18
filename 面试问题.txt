@@ -82,8 +82,21 @@
                   父组件：生成Globalcontext React.createContext
                   子组件：引入Globalcontext ,let context =useContext(context)，this.context
    H.useReducer: 
-         把reducer处理函数和state 对象, 
+         把reducer处理函数reducer(prevState,action)和state 对象, 
          公共的globalContext 放在外部
        let  [state,dispatch] = useReducer(reducer,stateObj)
       模拟一个简单版的redux  diapatch 不能处理异步
        父子级，跨级组件组件的使用:与createContext useContext配合使用
+
+ 自定义hooks ：对官方hooks的二次封装。一个函数，函数里面包含了官方的hooks
+
+router 
+
+HashRouter: window.onHashChange location.hash
+
+Route  navlink activeClass  声明式:
+  对应的组件props 会有路由详细信息，实现编程式跳转
+  props.history.push
+
+  hooks:useHistory  =>props.history
+window.location.href = '' 编程式

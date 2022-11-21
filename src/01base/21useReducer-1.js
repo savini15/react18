@@ -1,6 +1,6 @@
-import React, { useState, useReducer } from 'react';
+import React, { useReducer } from 'react';
 
-// 单组件的使用
+// 单组件中的使用
 //把reducer处理函数和state 对象放在外部
 
 function reducer(prevState,action){

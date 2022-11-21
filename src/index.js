@@ -1,3 +1,5 @@
+
+
 // import React from 'react'/
 import ReactDOM from 'react-dom/client'
 // import Demo1 from './01base/01com'
@@ -15,6 +17,7 @@ import Demo7 from './01base/07setState同步异步问题'
 // import Demo1 from './01base/16函数式组件中的setSate'
 // import Demo1 from './01base/17useCallback'
 // import Demo1 from './01base/20.useContext'
-import Demo1 from './01base/21useReducer-2'
+// import Demo1 from './01base/21useReducer-2'
+import Demo1 from './01base/22router/app'
 const container = document.getElementById('root')
 ReactDOM.createRoot(container).render(<Demo1 a={1} b={'jjj'} />)
