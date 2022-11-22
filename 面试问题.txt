@@ -103,4 +103,8 @@ window.location.href = '' 编程式
 
 路由拦截：<Route ></Route>
 css module : 局部样式
-redux ：数据集中管理
+redux ：数据集中管理  发布订阅模式
+
+store : state 以单一对象存储在store中  
+state 只读，reducer修改和返回的是它的复制
+reducer 纯函数  
