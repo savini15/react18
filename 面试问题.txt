@@ -102,5 +102,5 @@ Route  navlink activeClass  声明式:
 window.location.href = '' 编程式
 
 路由拦截：<Route ></Route>
-css module :
-redux 
+css module : 局部样式
+redux ：数据集中管理
