@@ -107,4 +107,10 @@ redux ：数据集中管理  发布订阅模式
 
 store : state 以单一对象存储在store中  
 state 只读，reducer修改和返回的是它的复制
-reducer 纯函数  
+reducer 纯函数，对外界的变量不产生影响（不操作参数），输入一定输出就一定
+
+reducer 合并  combineReducer({a,b})  store.getState().a.xx
+
+
+redux-thunk : 1。store dispatch 无法处理函数类型的action 2.执行函数
+
