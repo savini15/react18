@@ -112,5 +112,8 @@ reducer 纯函数，对外界的变量不产生影响（不操作参数），输
 reducer 合并  combineReducer({a,b})  store.getState().a.xx
 
 
-redux-thunk : 1。store dispatch 无法处理函数类型的action 2.执行函数
+redux-thunk : 1。store dispatch 无法处理函数类型的action 2.执行函数，返回对象
+redux-promise ：处理返回一个promise 对象的函数
+redux-persist : 实现store 中state存储的持久化，将state中的数据根据用户配置存在localstorage
+immutable 的使用： 实现一个变量仅仅能被使用但不能被修改
 
