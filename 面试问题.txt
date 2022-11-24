@@ -116,4 +116,6 @@ redux-thunk : 1。store dispatch 无法处理函数类型的action 2.执行函�
 redux-promise ：处理返回一个promise 对象的函数
 redux-persist : 实现store 中state存储的持久化，将state中的数据根据用户配置存在localstorage
 immutable 的使用： 实现一个变量仅仅能被使用但不能被修改
+API:Map  List  toJS  fromJS set setIn update  updateIn..
+immutable 和redux 的结合使用：reducer 中的初始值，通过fromJS设置，然后通过API更改后返回
 
