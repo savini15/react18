@@ -23,6 +23,7 @@ import Demo7 from './01base/07setState同步异步问题'
 // import Demo1 from './01base/24redux'
 
 // import Demo1 from './01base/25immutable/map'
-import Demo1 from './01base/25immutable/fromjs'
+// import Demo1 from './01base/25immutable/fromjs'
+import Demo1 from './01base/mbox'
 const container = document.getElementById('root')
 ReactDOM.createRoot(container).render(<Demo1 a={1} b={'jjj'} />)
