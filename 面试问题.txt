@@ -120,3 +120,8 @@ API:Map  List  toJS  fromJS set   get  setIn update  updateIn..
 immutable 和redux 的结合使用：reducer 中的初始值，通过fromJS设置，然后通过API更改后返回
 mobx : 状态管理  观察者模式    getter  setter 和Vue相似  obversable API autorun监听事件
 
+TS的使用
+
+styled-component 实现真正的组件，将css 和功能逻辑完全整合在一个文件
+也可以去封装一些公用的设置好样式的常规组件
+
