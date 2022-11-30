@@ -27,6 +27,7 @@ import Demo7 from './01base/07setState同步异步问题'
 // import Demo1 from './01base/mbox'
 // import Demo1 from './01base/26styled-components'
 // import Demo1 from './unitTest'
-import Demo1 from './01base/27redux-sage'
+// import Demo1 from './01base/27redux-sage'
+import Demo1 from './01base/forwardRef'
 const container = document.getElementById('root')
 ReactDOM.createRoot(container).render(<Demo1 a={1} b={'jjj'} />)

@@ -1,4 +1,4 @@
-import {take,fork,call, put,takeEvery} from 'redux-saga/effects'
+import {call, put,takeEvery} from 'redux-saga/effects'
 //监听一个action
 export default function *WatchSaga(){
     // while(true){
@@ -6,7 +6,6 @@ export default function *WatchSaga(){
     // //  yield take('minCount') //监听组件发来的action
     // //  yield fork(minTimeOut) //立即执行异步函数
     // }
-
     //简写
     yield takeEvery('minCount',minTimeOut)
 }

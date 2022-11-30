@@ -128,4 +128,8 @@ styled-component 实现真正的组件，将css 和功能逻辑完全整合在�
 单元测试
 redux-saga: 与redux-thunk  的区别？？？？？
 component dispatch action => wacth saga  take action => new action =>redducer =>newSatate =>store =>component
+forwardRef  高阶函数,用在子组件 :接收一个函数
+  //函数的参数  props，ref ，返回子组件template 
+//实现  ref的透传   子组件必须是函数组件 
 
+React.memo  ///用于函数式组件 ,在父组件改变时，如果子组件里的没发生改变，则不会重新render
