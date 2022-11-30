@@ -25,8 +25,6 @@ export default function App (){
     autorun(()=>{
         console.log('onj2 a',obj2.a)
     })
-
-
     useEffect(()=>{
 
         autorun(()=>{

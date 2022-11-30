@@ -126,4 +126,6 @@ styled-component 实现真正的组件，将css 和功能逻辑完全整合在�
 也可以去封装一些公用的设置好样式的常规组件
 
 单元测试
+redux-saga: 与redux-thunk  的区别？？？？？
+component dispatch action => wacth saga  take action => new action =>redducer =>newSatate =>store =>component
 
