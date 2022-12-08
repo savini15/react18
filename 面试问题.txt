@@ -132,4 +132,22 @@ forwardRef  高阶函数,用在子组件 :接收一个函数
   //函数的参数  props，ref ，返回子组件template 
 //实现  ref的透传   子组件必须是函数组件 
 
-React.memo  ///用于函数式组件 ,在父组件改变时，如果子组件里的没发生改变，则不会重新render
+React.memo  ///用于函数式组件 ,在父组件改变时，如果子组件里的属性
+            没发生改变，则不会重新render
+DVajs
+umijs : 阿里团队开发，将许多组件库和js react  vue 集成在一起，实现开箱即用
+
+react-router 6 的新增了哪些内容
+
+1.Route    path  element = 组件标签  
+2. 匹配父级路径  index  
+3. 路由的嵌套 outlet  
+4. navlink Link   ：navlink  没有了activeclassName 
+5. 
+   5.1 重定向 Navigate to   from react-router-dom
+   5.2  自己封装一个redirect  组件
+6. 编程式：
+  useNavigate  uselocation  
+  useParams  useSearchParams  from  react-router-dom 
+
+
