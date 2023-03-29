@@ -305,4 +305,10 @@ https://www.itxst.com/ag-grid/ynm2meqa.html、
 https://www.yesdotnet.com/archive/post/1622485709.html
 
 https://www.allwhere.vip/news/shownews.php?id=14155
-
+ 
+ 
+ 添加column 显示 隐藏的sidebar
+ 
+ 1.import 'ag-grid-enterprise';
+ 2. ag-grid-vue 元素添加属性  :sideBar="sideBar"  this.sideBar = 'columns'  直接打开状态      // this.sideBar = 'columns';
+    this.sideBar = { toolPanels: ['columns'] }  //点击sideBar 按钮展开
